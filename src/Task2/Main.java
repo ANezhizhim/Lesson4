@@ -3,16 +3,16 @@ package Task2;
 public class Main {
 
     public static void main(String[] args) {
-        Engine MAN_Engine = new Engine(380,"MAN Engine");
-        Lorry MAN= new Lorry("MAN","Грузовой",20,MAN_Engine);
+        Engine manEngine = new Engine(380, "MAN Engine");
+        Lorry MAN = new Lorry("MAN", "Грузовой", 20, manEngine);
         MAN.start();
         MAN.turnLeft();
         MAN.turnRight();
         MAN.stop();
         MAN.printInfo();
 
-        Engine BMW_Engine = new Engine(450,"BMW Engine");
-        SportCar BMW= new SportCar("BMW750","Спортивный",320,BMW_Engine);
+        Engine bmwEngine = new Engine(450, "BMW Engine");
+        SportCar BMW = new SportCar("BMW750", "Спортивный", 320, bmwEngine);
         BMW.start();
         BMW.turnLeft();
         BMW.turnRight();

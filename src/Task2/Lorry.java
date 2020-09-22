@@ -3,11 +3,11 @@ package Task2;
 public class Lorry extends  Car {
 protected int capacity;
 
-    public  Lorry(String lr_carModel, String lr_carClass, int lr_capacity, Engine lr_engine){
-        this.carModel=lr_carModel;
-        this.carClass=lr_carClass;
-        this.capacity=lr_capacity;
-        this.engine=lr_engine;
+    public  Lorry(String lrCarModel, String lrCarClass, int lrCapacity, Engine lrEngine){
+        this.carModel=lrCarModel;
+        this.carClass=lrCarClass;
+        this.capacity=lrCapacity;
+        this.engine=lrEngine;
 
     }
     @Override
