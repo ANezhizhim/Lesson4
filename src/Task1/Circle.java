@@ -1,11 +1,18 @@
 package Task1;
 
 public class Circle implements Shape {
-    public double R=10.0;
+    private double r;
 
 
     @Override
     public double square() {
-        return 0.5*(3.14D*R*R);
+        return 0.5 * (Math.PI * r * r);
     }
+
+    @Override
+    public void setSize(double... size) {
+        r = size[0];
+    }
+
+
 }

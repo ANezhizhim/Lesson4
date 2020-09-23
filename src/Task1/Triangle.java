@@ -1,11 +1,17 @@
 package Task1;
 
-public class Triangle implements Shape{
-    private double h=10.0;
-    private double a=20.0;
+public class Triangle implements Shape {
+    private double h;
+    private double w;
+
+    @Override
+    public void setSize(double... size) {
+        h = size[0];
+        w = size[1];
+    }
 
     @Override
     public double square() {
-        return 0.5*(a+h);
+        return 0.5 * (h * w);
     }
 }

@@ -1,7 +1,7 @@
 package Task2;
 
 public class SportCar extends Car {
-    protected int maxSpeed;
+    private int maxSpeed;
 
     public SportCar(String spkCarModel, String spkCarClass, int spkMaxSpeed, Engine spkEngine) {
         this.carModel = spkCarModel;
@@ -29,6 +29,6 @@ public class SportCar extends Car {
         System.out.println("Марка авто:" + this.carModel);
         System.out.println("Класс авто:" + this.carClass);
         System.out.println("Макс. скорость авто:" + this.maxSpeed);
-        System.out.println("Двигатель авто: произвоитель-" + this.engine.manufacturer + "; мощность-" + this.engine.power + " л.с.");
+        System.out.println("Двигатель авто: произвоитель-" + this.engine.getManufacturer() + "; мощность-" + this.engine.getPower() + " л.с.");
     }
 }
